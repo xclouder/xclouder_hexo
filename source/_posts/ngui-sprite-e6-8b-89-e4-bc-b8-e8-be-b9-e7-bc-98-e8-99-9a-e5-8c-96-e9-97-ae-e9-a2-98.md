@@ -8,8 +8,6 @@ categories:
 date: 2015-01-30 17:58:07
 ---
 
-<div> </div>
-<div> </div>
 <div>项目里有个需求，需要在某个UI元素下面放置一个纯色的下划线，我使用的2x2的白色方块，然后进行拉伸实现。</div>
 <div>但是问题来了，当我把这个方块加入图集中后，创建的UISprite看上去是这个样子：</div>
 <div> ![08331697 70BB 4638 AE4D AC543A3FF79A](http://xclouder-wordpress.stor.sinaapp.com/uploads/2015/01/08331697-70BB-4638-AE4D-AC543A3FF79A.png)</div>
@@ -19,7 +17,7 @@ date: 2015-01-30 17:58:07
 
 ![282BD608 73DD 4788 8B9E 97BAE9DF865B](http://xclouder-wordpress.stor.sinaapp.com/uploads/2015/01/282BD608-73DD-4788-8B9E-97BAE9DF865B.jpg)
 
-<div> </div>
+
 <div>![319285CF 64CD 4211 BFC3 DFDBF3A9D522](http://xclouder-wordpress.stor.sinaapp.com/uploads/2015/01/319285CF-64CD-4211-BFC3-DFDBF3A9D522.png)</div>
 <div> </div>
 <div>但是设置成Point会强制要求同一个图集里的UISprite都使用这个模式，可能会影响效果。</div>
