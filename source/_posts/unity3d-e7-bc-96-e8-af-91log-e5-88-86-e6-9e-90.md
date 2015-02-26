@@ -82,4 +82,5 @@ Included DLLs 6.3 mb 2.6%
 
 模块是可以扩展的，通过实现ILogAnalyzeModule来实现自定义模块，用LogAnalyzer.RegisterModule进行注册
 
-这个工具开源了，github地址：https://github.com/xclouder/editor_log_analyze.git
+这个工具开源了，github地址：
+[https://github.com/xclouder/editor_log_analyze.git](https://github.com/xclouder/editor_log_analyze.git)
