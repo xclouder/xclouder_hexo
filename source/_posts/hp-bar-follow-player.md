@@ -1,7 +1,7 @@
 title: 让血条跟随角色
 date: 2015-03-08 23:17:48
-categories:Unity3D
-tags:hpbar
+categories: Unity3D
+tags: hpbar
 ---
 目前实现方案采用的是： 获取人物世界坐标 -> 转换到UI层坐标 -> 创建血条UI对象并指定位置显示。
 
