@@ -79,8 +79,9 @@ disqus_shortname: xclouder
 # Extensions
 ## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
 ## Themes: https://github.com/hexojs/hexo/wiki/Themes
-#theme: landscape
-theme: bslight
+# theme: landscape
+# theme: bslight
+theme: hexo-theme-light
 exclude_generator:
 
 # Deployment
