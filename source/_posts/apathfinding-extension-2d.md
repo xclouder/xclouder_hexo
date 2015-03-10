@@ -64,13 +64,13 @@ void UpdateArea (GraphUpdateObject o)
 
 ###3.实现GridGraph2DEditor
 在AstarPath组件的Inspector中，有各种Graph的可视化参数编辑，我们可以通过实现一个GraphEditor来为上面写的GridGraph2D添加一个可视化编辑器。
-![](1.png)
+![](img/1.png)
 
 在类的上面，添加如上图所示的Attribute，即可在AstarPath的Inspector中看到新建“Grid Graph 2D”的按钮：
-![](2.png)
+![](img/2.png)
 
 效果如下：
-![](3.png)
+![](img/3.png)
 
 ###4.实现DynamicGridObstacle2D
 在原来DynamicGridObstacle基础上，改变坐标、并去掉高度检测。
