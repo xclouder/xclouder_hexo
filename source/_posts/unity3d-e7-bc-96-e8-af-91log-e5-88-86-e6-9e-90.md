@@ -12,11 +12,11 @@ Unity编译过程中一些重要的信息输出在Editor.log中，mac下默认�
 
 里面有一些信息对分析包大小、查找无效脚本有帮助。
 
->例如： Script attached to 'ShopContainer' in scene '' is missing or no valid script is attached. 一般是对象上挂载的脚本被删或无效导致
+例如： Script attached to 'ShopContainer' in scene '' is missing or no valid script is attached. 一般是对象上挂载的脚本被删或无效导致
 
 在优化包大小时，想检查dll引用，可以在log中找到如下信息
 
->Mono dependencies included in the build  
+Mono dependencies included in the build  
 Dependency assembly - Mono.Posix.dll  
 Dependency assembly - Mono.Security.dll   
 Dependency assembly - System.Configuration.dll  
@@ -36,7 +36,7 @@ Dependency assembly - Assembly-UnityScript-firstpass.dll
 
 Log中还列出了压缩前各素材用量占比，如：
 
->Textures 224.1 mb 93.8%  
+Textures 224.1 mb 93.8%  
 Meshes 0.0 kb 0.0%  
 Animations 173.2 kb 0.1%  
 Sounds 2.1 mb 0.9%  
@@ -50,7 +50,7 @@ Complete size 238.9 mb 100.0%
 
 并将Assets按大小降序列出：
 
->16.0 mb 6.7% Built-in Texture2D:SpriteAtlasTexture-2048x2048-fmt33  
+16.0 mb 6.7% Built-in Texture2D:SpriteAtlasTexture-2048x2048-fmt33  
 16.0 mb 6.7% Assets/Atlas/chapterUI.png  
 16.0 mb 6.7% Assets/Atlas/PlayUI.png  
 16.0 mb 6.7% Assets/Atlas/menu.png  
