@@ -1,7 +1,7 @@
-title: uGUI_note
+title: uGUI学习笔记
 date: 2015-04-07 07:20:21
-categories:
-tags:
+categories: Unity3D
+tags: uGUI
 ---
 看Unity3D文档像看国内教课书一样，一些概念，不懂的时候看还是不懂，明白了以后再看，好像也没有说错。好几个做Unity3D的朋友跟我吐槽过U3D的文档质量，相比Apple贴心的技术文档相去甚远。
 
