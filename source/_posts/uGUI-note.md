@@ -16,41 +16,41 @@ uGUI里面AutoLayout比较特别，我就此详细描述一下，希望能减少
 #RectTransform的理解
 UI元素有专门的RectTransform组件来描述元素的几何信息，继承于Transform，Inspector中其属性如下图。
 
-![RectTransform属性](http://upload-images.jianshu.io/upload_images/301341-22cced0431fed13f.png)
+![RectTransform属性](/images/585ba00d8b9a20380a69c5cb2ef4e9dad90bb62b.png)
 
 ##Anchors，锚点
 我们首先需要认识Anchors。官网上的图片很好表达了Andhors的功能，请恕我实践下拿来主义。
 
-![锚点全在中间的情况](http://upload-images.jianshu.io/upload_images/301341-220e11e70a5def02.gif)
+![锚点全在中间的情况](/images/63d987fd54c5c5cec135c90b92d2ccc735d88190.gif)
 
 
-![锚点全在右下角的情况](http://upload-images.jianshu.io/upload_images/301341-0c15d344dc0dad1c.gif)
+![锚点全在右下角的情况](/images/3f2a5e9f2e6b27eb58aaf7490d818158492f1d1a.gif)
 
 
-![锚点在两个角的情况](http://upload-images.jianshu.io/upload_images/301341-c2f23bcd628ef49d.gif)
+![锚点在两个角的情况](/images/164d81f4bdb29635f2db9aff5e4141104e005c60.gif)
 
 
-![锚点分开的情况](http://upload-images.jianshu.io/upload_images/301341-671094a181f26840.gif)
+![锚点分开的情况](/images/fd56ce926885f0c5a360c9e8e5e6bba9514b88bc.gif)
 
 善于观察的同学可能已经发现，不管什么情况，button的四个顶点到相应锚点的相对位置是不变的：
 
-![规律：button的四个顶点到相应锚点的相对位置是不变的](http://upload-images.jianshu.io/upload_images/301341-daaf44f85a3e6000.png)
+![规律：button的四个顶点到相应锚点的相对位置是不变的](/images/dd5e601d24262b7a4c96cce3772ee9821022da0a.png)
 
 当4个锚点都在一起的时候，RectTransform会显示Pos X，Pos Y，Width，Height四个属性可供修改。
-![当4个锚点都在一起](http://upload-images.jianshu.io/upload_images/301341-dbe0f01f6d838000.png)
+![当4个锚点都在一起](/images/968a79f838772208f234e3b9b58ae411414e9909.png)
 
 当不在一起的时候，RectTransform可调整的属性会有变化。
 
-![锚点不在一起的时候，Inspector中变化1](http://upload-images.jianshu.io/upload_images/301341-198c0e7bbc414831.png)
+![锚点不在一起的时候，Inspector中变化1](/images/3fc8baa8e7f0d0910d79b81068414bc2f47d0079.png)
 
-![锚点不在一起的时候，Inspector中变化2](http://upload-images.jianshu.io/upload_images/301341-860dfe5e10e57a3b.png)
+![锚点不在一起的时候，Inspector中变化2](/images/451585ad80225ad3615a2f2ceffc30764e06d8a9.png)
 
 
-![锚点不在一起的时候，Inspector中变化3](http://upload-images.jianshu.io/upload_images/301341-7f477aa3a395b010.png)
+![锚点不在一起的时候，Inspector中变化3](/images/f2fdb1def57b3a778f8685c32bf903e15cefff01.png)
 
 Anchors的Min和Max分别是正规化的值(从0到1)，表示占父RectTransform的百分比，下图中AnchorMin=(0.1,0.1)  AnchorMax=(0.9,0.9)
 
-![AnchorMin、AnchorMax](http://upload-images.jianshu.io/upload_images/301341-9f65e0d13aecc3be.png)
+![AnchorMin、AnchorMax](/images/d3ad3d6746b850735662f220087a207d9a42d0ef.png)
 
 ##Pivot，UI的中心点
 UI元素的旋转和缩放是围绕pivot进行的。RectTransform组件中，Pivot属性是一个正规化的二维向量，用来描述中心点在本身矩形大小的位置。默认值为(0.5, 0.5)，即几何中心。
@@ -92,7 +92,7 @@ The size of this RectTransform relative to the distances between the anchors.
 但可以确定的是，当一个UI元素不需要自动拉伸行为时，用anchoredPosition + sizeDelta来设置位置和大小是比较方便的方法。
 
 anchorMax、anchorMin和Inspector中的意义一致，需要注意的是，当UI元素不需要自动拉伸时，AnchorMax和AnchorMin是相等的。
-![AnchorMin与AnchorMax](http://upload-images.jianshu.io/upload_images/301341-3f848986df9d0568.png)
+![AnchorMin与AnchorMax](/images/ca6bd7ee124216a8f46a70cf046eac084f3d58eb.png)
 
 UI元素需要自动拉伸时，使用anchorMax、anchorMin + offsetMax、offsetMin来设置UI的位置及大小会比较方便。
 其中，anchorMax.x == anchorMin.x，height会自动拉伸，width固定不变。

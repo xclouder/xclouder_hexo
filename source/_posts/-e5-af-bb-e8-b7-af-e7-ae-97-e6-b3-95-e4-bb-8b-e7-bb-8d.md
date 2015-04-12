@@ -21,7 +21,7 @@ tags:
 
 这是简单的A*算法，为了验证下效果，我们将游戏世界划分为网格，在这些网格上使用上面的A*算法，其结果如下图：
 
-![astar_simple.png](http://xclouder-wordpress.stor.sinaapp.com/uploads/2015/01/astar_simple.png "astar_simple.png")
+![astar_simple.png](/images/3c38746894bb44f3461ef2b3c4dad9d15cfb4561.png "astar_simple.png")
 
 图中绿色线为路径，这走位很风骚，但显然不是我们想要的结果：两点之间线段最短嘛。
 
@@ -37,7 +37,7 @@ tags:
 
 使用路径平滑后的寻路结果如下：
 
-![NewImage](http://xclouder-wordpress.stor.sinaapp.com/uploads/2015/01/funnel_modify.png "funnel_modify.png")
+![NewImage](/images/663727efee2d75c9b19ea16dde8c920256dc223a.png "funnel_modify.png")
 
 如果要实现更加真实的路径平滑，还有很多因素需要考虑，比如当前速度、加速度、方向、最大转弯角度等等，这篇文章介绍了怎样获得更真实的路径结果：
 
@@ -47,7 +47,7 @@ tags:
 
 在游戏中，用户指定的目的地有可能是一个不可达的区域，这时传统A*算法是找不到路径的。可是用户操作了什么都不做会很奇怪，比较好的做法是寻路到离用户指定地点最近的可达点，如下图：
 
-![Door2 unity hero iPhone iPod Touch and iPad](http://xclouder-wordpress.stor.sinaapp.com/uploads/2015/01/Door2_unity_-_hero_-_iPhone__iPod_Touch_and_iPad.png "Door2_unity_-_hero_-_iPhone__iPod_Touch_and_iPad.png")
+![Door2 unity hero iPhone iPod Touch and iPad](/images/8638d260fbdee96669a7236e4594261914d48fa6.png "Door2_unity_-_hero_-_iPhone__iPod_Touch_and_iPad.png")
 
 这个问题倒是挺好解决，因为A*算法是有启发式搜索特性的，当遍历完所有可搜索的节点后，如果还没有找到完整可达的路径，则循环结束时得到的路径（部分路径）就是我们想要的。这个结果取决于启发式分数算法，即[这篇文章](http://www.cnblogs.com/technology/archive/2011/05/26/2058842.html)中讲到的H值计算方法。
 
