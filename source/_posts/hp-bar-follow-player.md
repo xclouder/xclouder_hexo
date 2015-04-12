@@ -19,7 +19,7 @@ tags: hpbar
 3. HpDisplay脚本  
 
 脚本默认按加载顺序来决定Update执行顺序，我们可以到Edit > Project Settings > Script Execution Order里自定义顺序。如下图：  
-![](img/4.png)
+![](images/4.png)
 
 图中"Default Time"是默认脚本的执行顺序，没有特别指定顺序的脚本，都在"Default Time"期间执行，他们之间的执行顺序由脚本加载时机决定。
 
