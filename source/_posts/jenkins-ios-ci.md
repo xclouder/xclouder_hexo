@@ -14,13 +14,13 @@ Jenkins是一个开源的CI Server解决方案，有数目众多的插件，不�
 
 ###jenkins项目设置
 新建jenkins项目，为了后面配置方便，建议把项目名设置为XCode项目名称。比如XCode项目名为iOSTest，Xcode工程文件为iOSTest.xcproject，这里的项目名就填iOSTest  
-![](/img/05031501.png)
+![](/images/05031501.png)
 
 我这里使用了Git仓库，在源码管理这里，设置好仓库地址以及相应的账号  
-![](/img/05031502.png)
+![](/images/05031502.png)
 
 在“构建”步骤，添加一个“Execute shell”模块
-![](/img/05031503.png)
+![](/images/05031503.png)
 
 添加下面的脚本  
 
@@ -39,18 +39,18 @@ DEBUG_INFORMATION_FORMAT="dwarf"表示不生成dsym文件，这样构建的时�
 
 
 在“构建后操作”中，添加一个“Archive the artifacts”模块
-![](/img/05031504.png)
+![](/images/05031504.png)
 
 用于存档的文件填写：builds/\*.\*
 然后保存，Jenkins项目设置Done。
 
 ###XCode项目设置
 在XCode项目中，需要把相应的Scheme设置为共享，并push修改到仓库。  
-![](/img/05031505.png)  
+![](/images/05031505.png)  
 
-![](/img/05031506.png)
+![](/images/05031506.png)
 
 把Release配置的证书和Provision Profile安装到CI Server上  
-![](/img/05031507.png)
+![](/images/05031507.png)
 
 执行构建任务，如果亮蓝灯，恭喜你成功啦
