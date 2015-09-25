@@ -1,0 +1,71 @@
+title: 小技巧，让频率限制逻辑更优雅
+tags:
+  - 重构
+id: 168
+categories:
+  - Unity3D
+date: 2015-02-06 19:11:41
+---
+
+很多时候，我们需要某些逻辑按一定频率执行，常见的写法会是这样：
+
+```
+private float previousExecuteTime;
+public float frequenceLimit = 1f;
+ 
+void Update()
+{
+     if (Time.time – previousExecuteTime >= frequenceLimit)
+     {
+         previousExecuteTime = time;
+         //Do Something
+     }
+}
+```
+
+如果这样的逻辑多了，会发现类似的代码散落在各个脚本里面重复。我们可以把这个逻辑判断抽象出来，放到一个名为TimeFence的类中:
+
+```
+[System.Serializable]
+public class TimeFence {
+ 
+//    [SerializeField]
+    public float frequenceLimit = 1f;
+    
+    public TimeFence (float frequence)
+    {
+        frequenceLimit = frequence;
+    }
+ 
+    private float previousExecuteTime;
+ 
+    public bool IsPass(float time)
+    {
+        if (time – previousExecuteTime >= frequenceLimit)
+        {
+            previousExecuteTime = time;
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+}
+```
+
+让我们用TimeFense重构上面的代码：
+
+```
+public TimeFense frequenceLimit = new TimeFense(1f);
+ 
+void Update()
+{
+     if (frequenceLimit.IsPass(Time.time))
+     {
+         //Do Something
+     }
+}
+```
+
+在Inspector中，可以直接修改frequenceLimit的值
