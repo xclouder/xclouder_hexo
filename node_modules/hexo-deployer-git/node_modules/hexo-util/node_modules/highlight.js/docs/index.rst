@@ -16,15 +16,9 @@ Contents:
    reference
    css-classes-reference
    style-guide
-   building-testing
-
-Contribution:
-
-.. toctree::
-   :maxdepth: 1
-
    language-contribution
-   style-contribution
+   building-testing
+   release-process
 
 Miscellaneous:
 

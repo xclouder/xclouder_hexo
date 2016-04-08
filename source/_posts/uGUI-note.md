@@ -13,6 +13,8 @@ tags: uGUI
 
 uGUI里面AutoLayout比较特别，我就此详细描述一下，希望能减少“教科书”的理解障碍。
 
+<!--more-->
+
 #RectTransform的理解
 UI元素有专门的RectTransform组件来描述元素的几何信息，继承于Transform，Inspector中其属性如下图。
 

@@ -15,6 +15,7 @@ Unity编译过程中一些重要的信息输出在Editor.log中，mac下默认�
 例如： Script attached to 'ShopContainer' in scene '' is missing or no valid script is attached. 一般是对象上挂载的脚本被删或无效导致
 
 在优化包大小时，想检查dll引用，可以在log中找到如下信息
+<!--more-->
 
 Mono dependencies included in the build  
 Dependency assembly - Mono.Posix.dll  

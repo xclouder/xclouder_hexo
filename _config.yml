@@ -1,5 +1,5 @@
 # Hexo Configuration
-## Docs: http://hexo.io/docs/configuration.html
+## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
@@ -16,10 +16,6 @@ url: http://www.xclouder.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
-
-#sitemap
-#sitemap:
-  #path:sitemap.xml
 
 # Directory
 source_dir: source
@@ -44,6 +40,7 @@ future: true
 highlight:
   enable: true
   line_number: true
+  auto_detect: false
   tab_replace:
 
 # Category & Tag
@@ -64,16 +61,12 @@ per_page: 10
 pagination_dir: page
 
 # Extensions
-## Plugins: http://hexo.io/plugins/
-## Themes: http://hexo.io/themes/
-#theme: landscape
-theme: hexo-theme-light
-
-# Disqus
-disqus_shortname: xclouder
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: spfk
 
 # Deployment
-## Docs: http://hexo.io/docs/deployment.html
+## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
   repo: https://github.com/xclouder/xclouder.github.io.git

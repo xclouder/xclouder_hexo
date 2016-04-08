@@ -9,6 +9,8 @@ Jenkins是一个开源的CI Server解决方案，有数目众多的插件，不�
 我两种方法都使用了一段时间，最后还是选择了jenkins。
 写这篇文章的原因是，网络上关于jenkins iOS的文章都比较过时，jenkins XCode Plugin很久没有更新了，对新版的XCode，打包成ipa的部分已经不可用。下面记录了搭建过程：
 
+<!--more-->
+
 ###jenkins的安装
 网上资料太多，这里略
 

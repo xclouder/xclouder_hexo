@@ -1,4 +1,4 @@
-title: "uGUI之AutoLayout详解——minHeight,preferredHeight,flexibleHeight"
+title: "uGUI之VerticalLayoutGroup详解"
 date: 2015-07-07 20:39:12
 categories: Unity3D
 tags: AutoLayout
@@ -8,6 +8,8 @@ tags: AutoLayout
 1、给Panel添加一个VerticalLayoutGroup组件，ChildForceExpand属性中勾上Width。
 2、给Button、Button2添加LayoutElement组件，其中Button的FlexibleHeight设置为0.3，Button2的FlexibleHeight设置为0.1
 3、将Panel的高度设置为100
+
+<!--more-->
 
 ![1-1](/images/cc7b7acff95f50dacd518d7fc8858ce81361114b.png)
 
