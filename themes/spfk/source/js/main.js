@@ -89,12 +89,13 @@ require([], function (){
         ], function (ScrollReveal) {
           // 更多animation:
           // http://daneden.github.io/animate.css/
-          var animationNames = [
-            "pulse", "fadeIn","fadeInRight", "flipInX", "lightSpeedIn","rotateInUpLeft", "slideInUp","zoomIn",
-            ],
-            len = animationNames.length,
-            randomAnimationName = animationNames[Math.ceil(Math.random() * len) - 1];
+          // var animationNames = [
+          //   "pulse", "fadeIn","fadeInRight", "flipInX", "lightSpeedIn","rotateInUpLeft", "slideInUp","zoomIn",
+          //   ],
+          //   len = animationNames.length,
+            // randomAnimationName = animationNames[Math.ceil(Math.random() * len) - 1];
 
+            randomAnimationName = "pulse";
           // ie9 不支持css3 keyframe动画, safari不支持requestAnimationFrame, 不使用随机动画，切回原来的动画
           if (!window.requestAnimationFrame) {
               $('.body-wrap > article').css({opacity: 1});
